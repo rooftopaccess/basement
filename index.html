@@ -1,3 +1,188 @@
 <html>
+<style>
+  :root {
+    --background-primary: #2a2f39;
+    --background-secondary: #21252b;
+    --border-primary: rgba(0, 0, 0, 0.2);
+    --border-heavy: rgba(0, 0, 0, 0.32);
+    --border-light: rgba(0, 0, 0, 0.1);
+    --color-brand: #4d78cc;
+    --shadow-small: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+body,
+.content,
+#notification-stream-body .container-empty,
+.popover,
+.dropdown-menu {
+    background-color: var(--background-primary) !important;
+}
+
+#header,
+#navigation,
+.container-footer,
+.notification-stream-header,
+.rbx-tab-heading,
+.horizontal-tabs,
+.game-card-link,
+.game-card-container,
+.rbx-private-server-item,
+.rbx-game-server-item,
+.rbx-friends-game-server-item,
+.section-content-off {
+    background-color: var(--background-secondary) !important;
+}
+
+.game-play-buttons {
+    border: 0;
+}
+
+.popover.bottom > .arrow,
+.popover.bottom > .arrow:after {
+    border-bottom-color: var(--background-secondary) !important;
+}
+
+#header,
+.notification-stream-header {
+    border-bottom: solid 1px var(--border-primary);
+}
+
+#navigation {
+    box-shadow: none;
+    border-right: solid 1px var(--border-primary) !Important;
+}
+
+.container-footer {
+    border-top: solid 1px var(--border-primary);
+}
+
+.notification-stream-wrap {
+    border: solid 1px var(--border-heavy) !important;
+}
+.dropdown-menu {
+    box-shadow: var(--shadow-small) !important;
+}
+
+#buy-robux-popover {
+    box-shadow: none;
+}
+
+.dark-theme .dropdown-menu li:hover,
+.dark-theme .dropdown-menu li:focus {
+    background-color: var(--color-brand) !important;
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    padding: 8px 0;
+}
+
+.rbx-divider {
+    background-color: var(--border-primary) !important;
+}
+
+.game-card-container thumbnail-2d .game-card-thumb,
+.game-card-thumb-container .game-card-thumb,
+.game-card-thumb-container::before,
+.dropdown-menu,
+.social-links .medallion {
+    border-radius: 0;
+}
+
+.social-links .medallion {
+    border: 0;
+    background-color: var(--background-secondary);
+}
+
+.dark-theme .game-card-container .game-card-name,
+.game-cards .game-card .game-card-name,
+.game-cards .game-card .game-card-info {
+    padding: 8px;
+}
+
+.game-card-name,
+.game-name-title {
+    padding-bottom: 0 !important;
+    margin: 0;
+    max-height: 50px !important;
+}
+
+.game-card-info,
+.game-card-avatar-slots {
+    position: absolute !important;
+    bottom: 0;
+}
+
+.game-card-avatar-slots {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.places-list {
+    height: 340px;
+}
+
+.game-card {
+    height: 260px !important;
+}
+
+[ng-controller="gameTileController"] {
+    height: 100%;
+    position: relative;
+}
+
+.abp {
+    display: none;
+}
+
+button,
+a,
+.btn-secondary-md {
+    border-radius: 0 !important;
+}
+
+.dark-theme .border-top, .dark-theme .border-bottom, .dark-theme .border-right, .dark-theme .border-left, .dark-theme .border {
+    border-color: var(--border-primary);
+}
+
+img {
+    background-color: var(--background-secondary) !important;
+}
+
+::-webkit-scrollbar {
+    background: var(--background-secondary);
+    border-left: solid 1px var(--border-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+    transition: background 175ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-heavy);
+}
+
+#navbar-universal-search {
+    margin-top: 0;
+    background-color: transparent;
+}
+
+#navbar-search-input {
+    height: 40px;
+    background-color: rgba(0, 0, 0 ,.1) !important;
+    border-radius: 0;
+    border: 0;
+}
+
+.dark-theme .rbx-header .navbar-search .navbar-search-option.selected {
+    background-color: var(--color-brand);
+    color: #fff !important;
+}
+
+.dark-theme .rbx-header .navbar-search .navbar-search-option.selected a {
+    color: #fff !important;
+}
+</style>
 <p>hi</p>
 </html>
